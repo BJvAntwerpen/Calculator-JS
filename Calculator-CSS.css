@@ -3,6 +3,7 @@ button {
 	height: 50px;
 	background-color: yellow;
 	border: none;
+	padding: 0;
 }
 
 button:hover {
@@ -12,4 +13,107 @@ button:hover {
 #calc, #calcIO {
 	border: 1px solid black;
 	height: 1.1em;
+}
+
+#button0 {
+	position: absolute;
+	top: 248px;
+	left: 62px;
+}
+
+#button1 {
+	position: absolute;
+	top: 86px;
+}
+
+#button2 {
+	position: absolute;
+	left: 62px;
+	top: 86px;
+}
+
+#button3 {
+	position: absolute;
+	left: 116px;
+	top: 86px;
+}
+
+#button4 {
+	position: absolute;
+	top: 140px;
+}
+
+#button5 {
+	position: absolute;
+	top: 140px;
+	left: 62px;
+}
+
+#button6 {
+	position: absolute;
+	top: 140px;
+	left: 116px;
+}
+
+#button7 {
+	position: absolute;
+	top: 194px;
+}
+
+#button8 {
+	position: absolute;
+	top: 194px;
+	left: 62px;
+}
+
+#button9 {
+	position: absolute;
+	top: 194px;
+	left: 116px;
+}
+
+#buttonDEC {
+	position: absolute;
+	top: 248px;
+	left: 116px;
+}
+
+#buttonCLR {
+	position: absolute;
+	top: 248px;
+}
+
+#buttonADD {
+	position: absolute;
+	top: 86px;
+	left: 170px;
+}
+
+#buttonSUB {
+	position: absolute;
+	top: 140px;
+	left: 170px;
+}
+
+#buttonMULT {
+	position: absolute;
+	top: 194px;
+	left: 170px;
+}
+
+#buttonDIV {
+	position: absolute;
+	top: 248px;
+	left: 170px;
+}
+
+#buttonANS {
+	position: absolute;
+	top: 248px;
+	left: 224px;
+}
+
+#info {
+	position: absolute;
+	top: 290px;
 }
