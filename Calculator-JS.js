@@ -49,19 +49,19 @@ function numpad(event) {
         document.getElementById('button9').style.backgroundColor = "green";
         setTimeout(function(){document.getElementById('button9').style.backgroundColor = "yellow";}, 20);
     } else if (NumpadIO == 47) {
-        DIV();
+        operator(":");
         document.getElementById('buttonDIV').style.backgroundColor = "green";
         setTimeout(function(){document.getElementById('buttonDIV').style.backgroundColor = "yellow";}, 20);
     } else if (NumpadIO == 42) {
-        MULT();
+        operator("x")
         document.getElementById('buttonMULT').style.backgroundColor = "green";
         setTimeout(function(){document.getElementById('buttonMULT').style.backgroundColor = "yellow";}, 20);
     } else if (NumpadIO == 45) {
-        SUB();
+        operator("-")
         document.getElementById('buttonSUB').style.backgroundColor = "green";
         setTimeout(function(){document.getElementById('buttonSUB').style.backgroundColor = "yellow";}, 20);
     } else if (NumpadIO == 43) {
-        ADD();
+        operator("+")
         document.getElementById('buttonADD').style.backgroundColor = "green";
         setTimeout(function(){document.getElementById('buttonADD').style.backgroundColor = "yellow";}, 20);
     } else if (NumpadIO == 13) {
@@ -123,51 +123,15 @@ function ClearInput() {
     document.getElementById('calcIO').innerHTML = "0";
 }
 
-function ADD() {
+function operator(op) {
     num = Number(num);
     numbers.push(num);
     if (biggestDecs < decs) {
         biggestDecs = decs;
     }
-    document.getElementById('calc').innerHTML += num + " + ";
-    operators.push("+")
-    console.log("ADD")
-    ClearInput();
-}
-
-function SUB() {
-    num = Number(num);
-    numbers.push(num);
-    if (biggestDecs < decs) {
-        biggestDecs = decs;
-    }
-    document.getElementById('calc').innerHTML += num + " - ";
-    operators.push("-")
-    console.log("SUB")
-    ClearInput();
-}
-
-function MULT() {
-    num = Number(num);
-    numbers.push(num);
-    if (biggestDecs < decs) {
-        biggestDecs = decs;
-    }
-    document.getElementById('calc').innerHTML += num + " x ";
-    operators.push("x")
-    console.log("MULT")
-    ClearInput();
-}
-
-function DIV() {
-    num = Number(num);
-    numbers.push(num);
-    if (biggestDecs < decs) {
-        biggestDecs = decs;
-    }
-    document.getElementById('calc').innerHTML += num + " : ";
-    operators.push(":")
-    console.log("DIV")
+    document.getElementById('calc').innerHTML += num + " " + op + " ";
+    operators.push(op)
+    console.log(op)
     ClearInput();
 }
 
