@@ -150,10 +150,7 @@ function buttonANS() {
             if (operators[i] == "x") {
                 numbers.splice(i, 2, numbers[i] * numbers[i+1])
                 operators.splice(i, 1)
-            }
-        }
-        for (i = 0; i <= operators.length; i++) {
-            if (operators[i] == ":") {
+            } else if (operators[i] == ":") {
                 numbers.splice(i, 2, numbers[i] / numbers[i+1])
                 operators.splice(i, 1)
             }
@@ -162,10 +159,7 @@ function buttonANS() {
             if (operators[i] == "+") {
                 numbers.splice(i, 2, numbers[i] + numbers[i+1])
                 operators.splice(i, 1)
-            }
-        }
-        for (i = 0; i <= operators.length; i++) {
-            if (operators[i] == "-") {
+            } else if (operators[i] == "-") {
                 numbers.splice(i, 2, numbers[i] - numbers[i+1])
                 operators.splice(i, 1)
             }
