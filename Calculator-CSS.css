@@ -4,3 +4,12 @@ button {
 	background-color: yellow;
 	border: none;
 }
+
+button:hover {
+	background-color: green;
+}
+
+#calc, #calcIO {
+	border: 1px solid black;
+	height: 1.1em;
+}
